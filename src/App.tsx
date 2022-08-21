@@ -1,10 +1,6 @@
-import React from 'react'
-// import './App.css'
 import './App.scss'
-// import bgImgSvg from '../public/business-people.svg'
 import bgImgWebp from '../public/img2.jpg'
 import Button from './components/Button'
-// import bgImg from '../public/img.jpg'
 
 const App = (): JSX.Element => {
   return (
@@ -25,7 +21,7 @@ const App = (): JSX.Element => {
           <Button name={`Click`} />
         </ul>
       </div>
-      <img className='img' src={bgImgWebp} alt='image' />
+      <img className='img' src={bgImgWebp} alt='background pic' />
     </div>
   )
 }

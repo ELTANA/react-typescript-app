@@ -28,7 +28,6 @@
   }
 
   &__sidebar {
-
     @include u.breakpoint-down(md) {
       text-align: center;
     }

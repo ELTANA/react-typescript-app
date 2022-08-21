@@ -1,22 +1,22 @@
 @use 'functions' as fn;
 
-// MIN-WIDTH BREAKPOINTS : CULLED FROM BOOTSTRAP 
+// MIN-WIDTH BREAKPOINTS : CULLED FROM BOOTSTRAP
 $breakpoints-up: (
   'xs': fn.em(0),
   'sm': fn.em(576),
   'md': fn.em(768),
   'lg': fn.em(992),
   'xl': fn.em(1200),
-  'xxl': fn.em(1400)
+  'xxl': fn.em(1400),
 );
 
-// MAX-WIDTH BREAKPOINTS : CULLED FROM BOOTSTRAP 
+// MAX-WIDTH BREAKPOINTS : CULLED FROM BOOTSTRAP
 $breakpoints-down: (
   'xs': fn.em(575.98),
   'sm': fn.em(767.98),
   'md': fn.em(991.98),
   'lg': fn.em(1199.98),
-  'xl': fn.em(1399.98)
+  'xl': fn.em(1399.98),
 );
 
 @mixin breakpoint-up($size) {

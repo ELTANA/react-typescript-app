@@ -3,7 +3,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Macondo&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -56,8 +55,6 @@ body {
     .list__group {
       list-style: lower-greek;
       text-align: start;
-
-
 
       .list__item {
         font-size: utils.rem(16);
