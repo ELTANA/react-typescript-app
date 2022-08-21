@@ -1,0 +1,53 @@
+@use '../utils' as u;
+
+// // placeholder
+// %widget {
+//   padding: u.rem(16);
+// }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: u.rem(40);
+  max-width: min(100% - u.rem(40), u.rem(1000));
+  margin-inline: auto;
+
+  @include u.breakpoint-up(lg) {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  &__main,
+  &__sidebar {
+    padding: u.rem(40);
+  }
+
+  &__main {
+    background-color: hsl(240, 100%, 30%);
+  }
+
+  &__sidebar {
+
+    @include u.breakpoint-down(md) {
+      text-align: center;
+    }
+  }
+
+  &__widget {
+    // $widget: &;
+    padding: u.rem(16);
+
+    &--magenta {
+      // @extend %widget;
+      background-color: hsl(300, 100%, 30%);
+    }
+
+    &--green {
+      // @extend #{$widget};
+      // @extend .grid__widget;
+      // @extend %widget;
+      background-color: hsl(120, 100%, 30%);
+    }
+  }
+}

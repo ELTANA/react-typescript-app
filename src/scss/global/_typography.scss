@@ -1,0 +1,49 @@
+@use '../utils' as utils;
+
+h1,
+h2,
+h3,
+h4 {
+  margin-block: 0;
+  line-height: 1.8;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(utils.rem(64), utils.rem(32) + 5vw, utils.rem(80));
+  font-weight: 600;
+}
+
+h2 {
+  font-size: clamp(utils.rem(40), utils.rem(24) + 2vw, utils.rem(64));
+}
+
+h3 {
+  font-size: clamp(utils.rem(24), utils.rem(16) + 1.5vw, utils.rem(48));
+}
+
+h4 {
+  font-size: clamp(utils.rem(16), utils.rem(16) + 0.5vw, utils.rem(32));
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+p {
+  margin-block: 0;
+  font-size: utils.rem(16);
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+a,
+a:visited,
+a:active {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  color: inherit;
+}

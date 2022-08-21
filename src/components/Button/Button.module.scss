@@ -1,0 +1,19 @@
+@use '../../scss/global/colors' as colors;
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding-inline: 1.5rem;
+  padding-block: 0.5rem;
+  margin-block: 1rem;
+  font-size: 1.2rem;
+  background-color: colors.$green;
+  color: colors.$dark;
+  transition: all 500ms ease-in;
+
+  &:hover {
+    background-color: colors.$dark;
+    color: colors.$light;
+  }
+}

@@ -1,0 +1,74 @@
+@use '../utils' as utils;
+@use './colors' as colors;
+
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: utils.$base-font;
+  background-color: colors.$base-bg;
+  color: colors.$light;
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+
+  .caption {
+    width: 100%;
+    height: 100%;
+    color: colors.$light;
+    position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .title {
+      color: colors.$green;
+      font-family: 'Macondo', cursive;
+    }
+
+    .sub__title {
+      max-width: 35ch;
+    }
+
+    .list__group {
+      list-style: lower-greek;
+      text-align: start;
+
+
+
+      .list__item {
+        font-size: utils.rem(16);
+        font-weight: 600;
+      }
+    }
+  }
+
+  .img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+  }
+}
