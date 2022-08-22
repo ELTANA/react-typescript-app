@@ -1,5 +1,5 @@
 name: CI/CD Pipeline
-on: 
+on:
   push:
     branches:
       - master
@@ -7,20 +7,18 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - name: Checkout repository
       - uses: actions/checkout@v3
       - name: Set-up Node
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: 16
       - name: Install Dependencies
-        - run: yarn
+      - run: yarn ci
       - name: Formatting and Linting
-        - run: 
-            yarn format:check
-            yarn lint
-            yarn tsc:check
+      - run: yarn format:check
+          yarn lint
+          yarn tsc:check
       - name: Run Tests
-        - run: yarn test
-      
+      - run: yarn test
