@@ -8,19 +8,19 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps: 
-      name: Checkout repository
-      uses: actions/checkout@v3
-      name: Set-up Node
-      uses: actions/setup-node@v2
-       with:
-        node-version: '16'
-      name: Install Dependencies
-        run: yarn ci
-      name: Formatting and Linting
-        run: 
-          yarn format:check
-          yarn lint
-          yarn tsc:check
-      name: Run Tests
-        run: yarn test
+      - name: Checkout repository
+      - uses: actions/checkout@v3
+      - name: Set-up Node
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+      - name: Install Dependencies
+        - run: yarn
+      - name: Formatting and Linting
+        - run: 
+            yarn format:check
+            yarn lint
+            yarn tsc:check
+      - name: Run Tests
+        - run: yarn test
       
