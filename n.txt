@@ -8,7 +8,7 @@ const App = (): JSX.Element => {
       <div className='caption'>
         <h1 className='title'>TS React By EL&apos;TANA</h1>
         <h4 className='sub__title'>
-          A TypeScript React set-up with Webpack and Babel. This App is set-up
+          A TypeScript React Set-Up with Webpack and Babel. This App is set-up
           to support
         </h4>
         <ul className='list__group'>

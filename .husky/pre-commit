@@ -5,3 +5,5 @@
 yarn format
 yarn format:check
 yarn lint
+yarn tsc:check
+yarn test
