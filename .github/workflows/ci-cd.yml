@@ -10,17 +10,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    with:
-      node-version: 16
-
     steps:
+      - name: Check-out Branch
       - uses: actions/checkout@v3
-      - name: Use Node.js 16
+
+      - name: Set-up Node 16
         uses: actions/setup-node@v3
         with:
           node-version: 16
           cache: 'yarn'
-      - run: yarn ci
+      - name: Install Dependencies
+        run: yarn install
 
       - name: Format and Lint
         uses: actions/setup-node@v3
