@@ -30,6 +30,8 @@ jobs:
           yarn tsc:check
       - name: Run Tests
         run: yarn test
+      - name: Build Production Website
+        run: yarn build
       - name: Deploy to Netlify
         uses: netlify/actions/cli@master
         with:
