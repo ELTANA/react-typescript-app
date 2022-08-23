@@ -20,15 +20,12 @@ jobs:
           node-version: 16
           cache: 'yarn'
       - name: Install Dependencies
-        uses: actions/setup-node@v3
         run: yarn install
 
       - name: Format and Lint
-        uses: actions/setup-node@v3
       - run: yarn format:check
       - run: yarn lint
       - run: yarn tsc:check
 
       - name: Run Tests
-        uses: actions/setup-node@v3
       - run: yarn test
