@@ -19,7 +19,8 @@
     "tsc:check": "tsc --noEmit",
     "test": "jest",
     "test:watch": "jest --watch",
-    "ci": "rm -rf node_modules && yarn install --frozen-lockfile"
+    "preci": "rm -fr node_modules",
+    "ci": "yarn install --frozen-lockfile"
   },
   "keywords": [],
   "author": "",
