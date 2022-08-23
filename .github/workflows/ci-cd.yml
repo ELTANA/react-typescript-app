@@ -23,8 +23,16 @@ jobs:
           cache: 'yarn'
       - run: yarn ci
       - name: Format and Lint
+        uses: actions/setup-node@v3
+          with:
+            node-version: 16
+            cache: 'yarn'
       - run: yarn format:check
       - run: yarn lint
       - run: yarn tsc:check
       - name: Run Tests
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'yarn'
       - run: yarn test
