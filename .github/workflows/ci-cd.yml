@@ -26,4 +26,4 @@ jobs:
       - run: yarn format:check
       - run: yarn tsc:check
       - run: yarn test
-      - run: yarn run build --if-present
+      - run: yarn build
