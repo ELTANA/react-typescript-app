@@ -18,7 +18,8 @@
     "prepare": "husky install",
     "tsc:check": "tsc --noEmit",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "ci": "yarn install --frozen-lockfile"
   },
   "keywords": [],
   "author": "",
