@@ -19,7 +19,7 @@
     "tsc:check": "tsc --noEmit",
     "test": "jest",
     "test:watch": "jest --watch",
-    "ci": "yarn install --immutable --immutable-cache --check-cache"
+    "ci": "rm -rf node_modules && yarn install --frozen-lockfile"
   },
   "keywords": [],
   "author": "",
