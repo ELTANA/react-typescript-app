@@ -1,11 +1,14 @@
+// import { Button, Input } from '@mui/material'
 import './App.scss'
-import bgImgWebp from '../public/img2.jpg'
-import Button from './components/Button'
+// import bgImgWebp from '../public/img2.jpg'
+// import Button from './components/Button'
 
 const App = (): JSX.Element => {
   return (
     <div className='home'>
-      <div className='caption'>
+      <input type='text' name='ifield' id='ifield' />
+      <button name='click me'>Click Me</button>
+      {/* <div className='caption'>
         <h1 className='title'>TS React By EL&apos;TANA</h1>
         <h4 className='sub__title'>
           A TypeScript React set-up with Webpack and Babel. This App is set-up
@@ -21,7 +24,7 @@ const App = (): JSX.Element => {
           <Button name={`Click`} />
         </ul>
       </div>
-      <img className='img' src={bgImgWebp} alt='background pic' />
+      <img className='img' src={bgImgWebp} alt='background pic' /> */}
     </div>
   )
 }

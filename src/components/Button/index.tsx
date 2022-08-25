@@ -5,7 +5,9 @@ type Props = {
 }
 
 const Button = ({ name }: Props): JSX.Element => (
-  <button className={styles.btn}>{name}</button>
+  <button name='btn' className={styles.btn}>
+    {name}
+  </button>
 )
 
 export default Button
